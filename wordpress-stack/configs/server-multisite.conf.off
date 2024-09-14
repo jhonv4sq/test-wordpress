@@ -1,0 +1,10 @@
+if ( $uri ~ "files" ) {
+	rewrite ^/{{ item }}/(?:.*/)?files/(.+) /{{ item }}/wp-includes/ms-files.php?file=$1;
+}
+if (!-e $request_filename) {
+	rewrite  ^/{{ item }}/[_0-9a-zA-Z-]+(/wp-(content|admin|includes).*) /{{ item }}$1 break;
+	rewrite  ^/{{ item }}/[_0-9a-zA-Z-]+(/.*\.php)$ /{{ item }}$1 break;
+}
+location /{{ item }} {
+	try_files $uri $uri/ /{{ item }}/index.php$is_args$args;
+}
