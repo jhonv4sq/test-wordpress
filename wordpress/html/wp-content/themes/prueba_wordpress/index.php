@@ -1,37 +1,24 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php wp_title(); ?></title>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-    <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
+<?php
+/**
+ * The main template file
+ *
+ * @package Prueba_Wordpress
+ */
 
-    <header>
-        <h1><?php bloginfo( 'name' ); ?></h1>
-        <p><?php bloginfo( 'description' ); ?></p>
-    </header>
+get_header();
+?>
 
-    <div id="content">
-        <?php 
-        if ( have_posts() ) {
-            while ( have_posts() ) {
-                the_post();
-                the_title( '<h2>', '</h2>' );
-                the_content();
-            }
-        } else {
-            echo '<p>No content found</p>';
-        }
-        ?>
+<main id="main">
+    <div id="module">
+        <div class="prueba-wordpress__container">
+            <?php 
+                get_template_part( 'template-parts/form' );
+                get_template_part( 'template-parts/table' );
+            ?>
+        </div>
     </div>
+</main>
 
-    <footer>
-        <p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
-    </footer>
+<?php
+get_footer();
 
-    <?php wp_footer(); ?>
-</body>
-</html>
