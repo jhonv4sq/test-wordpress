@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and the site's header.
  *
- * @package Prueba_Wordpress
+ * @package Test_Wordpress
  */
 
 ?>
@@ -22,7 +22,7 @@
     <?php wp_body_open(); ?>
 
     <header>
-        <div class="prueba-wordpress__container">
+        <div class="test-wordpress__container">
             <h1><?php bloginfo( 'name' ); ?></h1>
         </div>
     </header>

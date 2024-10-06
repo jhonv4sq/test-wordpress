@@ -1,5 +1,5 @@
 const printData = (users) => {
-    const tbody = document.querySelector('.prueba-wordpress__table-body')
+    const tbody = document.querySelector('.test-wordpress__table-body')
     tbody.innerHTML = ""
     
     if (Array.isArray(users)) {
@@ -67,17 +67,17 @@ const showAllUsers = () => {
 
 const setupPagination = (totalPages, currentPage) => {
     currentPage = Number(currentPage)
-    const paginationContainer = document.querySelector('.prueba-wordpress__pagination')
+    const paginationContainer = document.querySelector('.test-wordpress__pagination')
     paginationContainer.innerHTML = ""
 
     let prevButton = document.createElement('button')
     prevButton.textContent = 'Prev'
     
-    prevButton.classList.add('prueba-wordpress__form-button')
+    prevButton.classList.add('test-wordpress__form-button')
 
     if (currentPage == 1) {
         prevButton.disabled = true
-        prevButton.classList.add('prueba-wordpress__form-button-disabled')
+        prevButton.classList.add('test-wordpress__form-button-disabled')
     }
     
     prevButton.addEventListener('click', function(e) {
@@ -88,11 +88,11 @@ const setupPagination = (totalPages, currentPage) => {
 
     let nextButton = document.createElement('button')
     nextButton.textContent = 'Next'
-    nextButton.classList.add('prueba-wordpress__form-button')
+    nextButton.classList.add('test-wordpress__form-button')
     
     if (currentPage == totalPages) {
         nextButton.disabled = true
-        nextButton.classList.add('prueba-wordpress__form-button-disabled')
+        nextButton.classList.add('test-wordpress__form-button-disabled')
     }
 
     nextButton.addEventListener('click', function(e) {
@@ -121,7 +121,7 @@ const loadPageData = (page) => {
 } 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('.prueba-wordpress__form')
+    const form = document.querySelector('.test-wordpress__form')
     setEventToForm(form)
     showAllUsers()
 })

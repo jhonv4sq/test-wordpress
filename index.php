@@ -4,7 +4,7 @@
  *
  * This template is used to display the main content of the page, including the search form and the user table.
  *
- * @package Prueba_Wordpress
+ * @package Test_Wordpress
  */
 
 get_header();
@@ -12,7 +12,7 @@ get_header();
 
 <main id="main">
     <div id="module">
-        <div class="prueba-wordpress__container">
+        <div class="test-wordpress__container">
             <?php 
                 get_template_part( 'template-parts/form' );
                 get_template_part( 'template-parts/table' );

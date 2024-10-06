@@ -2,10 +2,10 @@
 /**
  * Prueba WordPress theme functions
  *
- * @package Prueba_Wordpress
+ * @package Test_Wordpress
  */
 
-namespace Prueba_Wordpress;
+namespace Test_Wordpress;
 
 add_action( 'init', __NAMESPACE__ . '\start_session' );
 add_action( 'after_setup_theme', __NAMESPACE__ . '\setup' );
@@ -51,9 +51,9 @@ function enqueue_theme_style() {
  */
 function enqueue_add_ajax() {
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_script( 'prueba-wordpress-ajax', get_stylesheet_directory_uri() . '/assets/js/prueba_wordpress.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'test-wordpress-ajax', get_stylesheet_directory_uri() . '/assets/js/test_wordpress.js', array( 'jquery' ), null, true );
 
-    wp_localize_script( 'prueba-wordpress-ajax', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+    wp_localize_script( 'test-wordpress-ajax', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
 
 /**

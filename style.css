@@ -1,14 +1,14 @@
 /*
-Theme Name: Prueba Wordpress
+Theme Name: Test Wordpress
 Theme URI: 
 Author: Jhon Vasquez
 Author URI: https://github.com/jhonv4sq
-Description: prueba tecnica de wordpress.
+Description: Module for searching users.
 Requires PHP: 8.2
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: prueba-wordpress
+Text Domain: test-wordpress
 */
 
 :root {
@@ -17,8 +17,8 @@ Text Domain: prueba-wordpress
     color: white;
 }
 
-.prueba-wordpress__container {
-    max-width: var(--prueba-wordpress__max-width);
+.test-wordpress__container {
+    max-width: var(--test-wordpress__max-width);
     padding-right: calc(1.5rem * 0.5);
     padding-left: calc(1.5rem * 0.5);
     margin-right: auto;
@@ -30,7 +30,7 @@ Text Domain: prueba-wordpress
 	align-items: center;
 }
 
-.prueba-wordpress__table {
+.test-wordpress__table {
     width: 100%;
 	border: 1px solid #e5e7eb;
 	border-radius: 15px;
@@ -38,64 +38,64 @@ Text Domain: prueba-wordpress
 	padding: 1rem;
 }
 
-.prueba-wordpress__table-head {
+.test-wordpress__table-head {
 	color: rgba(44, 102, 217, 0.974);
 
-	--prueba-wordpress__th-y: 0.75rem;
-	--prueba-wordpress__th-x: 1.5rem;
+	--test-wordpress__th-y: 0.75rem;
+	--test-wordpress__th-x: 1.5rem;
 }
 
-.prueba-wordpress__table-head th {
-    padding: var(--prueba-wordpress__th-y) var(--prueba-wordpress__th-x);
+.test-wordpress__table-head th {
+    padding: var(--test-wordpress__th-y) var(--test-wordpress__th-x);
 }
 
-.prueba-wordpress__table-body {
-	--prueba-wordpress__td-y: 0.4rem;
-	--prueba-wordpress__td-x: 1.5rem;
+.test-wordpress__table-body {
+	--test-wordpress__td-y: 0.4rem;
+	--test-wordpress__td-x: 1.5rem;
 }
 
-.prueba-wordpress__table-body td  {
-    padding: var(--prueba-wordpress__td-y) var(--prueba-wordpress__td-x);
+.test-wordpress__table-body td  {
+    padding: var(--test-wordpress__td-y) var(--test-wordpress__td-x);
     text-align: center;
 	border-collapse: collapse;
 }
 
-.prueba-wordpress__form {
+.test-wordpress__form {
     width:30rem;
 }
 
-.prueba-wordpress__form-wrapper {
+.test-wordpress__form-wrapper {
     display: flex;
 	flex-direction: column;
     align-items: center;
 }
 
-.prueba-wordpress__form-container {
+.test-wordpress__form-container {
     display: flex;
 	flex-direction: column;
 	margin: 0.5rem;
 	width: 50%;
 
-    --prueba-wordpress__padding-x: .75rem;
-	--prueba-wordpress__padding-y: 0.3rem;
+    --test-wordpress__padding-x: .75rem;
+	--test-wordpress__padding-y: 0.3rem;
 }
 
-.prueba-wordpress__form-container label {
+.test-wordpress__form-container label {
 	margin-bottom: 3px;
 	font-weight: bold;
 }
 
-.prueba-wordpress__form-container input {
+.test-wordpress__form-container input {
 	color: #495057;
 	background-color: #fff;
 	background-clip: padding-box;
   	border: 1px solid #ced4da;
   	border-radius: .25rem;
-	padding: var(--prueba-wordpress__padding-y) var(--prueba-wordpress__padding-x);
+	padding: var(--test-wordpress__padding-y) var(--test-wordpress__padding-x);
 	font-size: 1rem;
 }
 
-.prueba-wordpress__form-button {
+.test-wordpress__form-button {
     color: #fff;
     background-color: #007bff;
     border: 1px solid #007bff;
@@ -112,38 +112,38 @@ Text Domain: prueba-wordpress
     cursor: pointer;
 }
 
-.prueba-wordpress__form-button-disabled {
+.test-wordpress__form-button-disabled {
     cursor: not-allowed;
     background-color: #011283;
     pointer-events:none;
     color: #8a8989;
 }
 
-.prueba-wordpress__form-button:hover {
+.test-wordpress__form-button:hover {
 	background-color: #031dc2;
 	color: #cbcbcb;
 }
 
 @media (min-width: 576px) {
-    .prueba-wordpress__container {
-        --prueba-wordpress__max-width: 540px;
+    .test-wordpress__container {
+        --test-wordpress__max-width: 540px;
     }
 }
 
 @media (min-width: 768px) {
-    .prueba-wordpress__container {
-        --prueba-wordpress__max-width: 960px;
+    .test-wordpress__container {
+        --test-wordpress__max-width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
-    .prueba-wordpress__container {
-        --prueba-wordpress__max-width: 1140px;
+    .test-wordpress__container {
+        --test-wordpress__max-width: 1140px;
     }
 }
 
 @media (min-width: 1400px) {
-    .prueba-wordpress__container {
-        --prueba-wordpress__max-width: 1320px;
+    .test-wordpress__container {
+        --test-wordpress__max-width: 1320px;
     }
 }
