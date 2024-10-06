@@ -1,2 +1,2 @@
 # test-wordpress Theme
-<!-- [![banner.jpg](https://github.com/jhonv4sq/jhonv4sq/blob/main/banner.jpg?raw=true)](https://github.com/jhonv4sq/jhonv4sq/blob/main/banner.jpg) -->
+[![screenshot.jpg](https://github.com/jhonv4sq/test-wordpress/blob/main/screenshot.jpg?raw=true)](screenshot.jpg)
